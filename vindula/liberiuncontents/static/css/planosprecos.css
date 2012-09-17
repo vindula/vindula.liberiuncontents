@@ -28,14 +28,15 @@
 }
 
 #planos .boxPlan {
-	width: 267px;
+	width: 248px;
 	border: 1px solid #FFF;
 	outline: 1px solid #D2D4D3;
 	padding: 20px;
 	background: #F5F5F5;
 	float: left;
-	margin: 20px 12px;
+	margin: 20px 11px;
 }
+
 #planos .boxPlan:first-child { margin-left: 0; }
 #planos .boxPlan:last-child { margin-right: 0; }
 
