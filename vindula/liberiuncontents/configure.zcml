@@ -19,7 +19,7 @@
        in Plone -->
   <genericsetup:registerProfile
       name="default"
-      title="vindula.liberiuncontents"
+      title="Vindula Liberiun Contents"
       directory="profiles/default"
       description="Extension profile for vindula.liberiuncontents"
       provides="Products.GenericSetup.interfaces.EXTENSION"
