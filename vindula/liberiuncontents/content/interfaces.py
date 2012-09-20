@@ -12,3 +12,6 @@ class IPlanosPrecosContainer(Interface):
     
 class IPlanosPrecos(Interface):
     """ Interface for IPlanosPrecos content type """
+    
+class ISocialNetwork(Interface):
+    """ Social Network """

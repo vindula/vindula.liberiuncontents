@@ -1,0 +1,9 @@
+Changelog
+=========
+
+1.0 (released)
+------------------
+
+1.1 - 2012-09-20
+-------------------
+	- Modificado o conteudo de Rede Social de dexterity para archetype
