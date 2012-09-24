@@ -7,3 +7,7 @@ Changelog
 1.1 - 2012-09-20
 -------------------
 	- Modificado o conteudo de Rede Social de dexterity para archetype
+
+1.1.1 - 2012-09-24
+---------------------
+- Correção Ticket #26 

@@ -28,7 +28,7 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
             description_msgid='vindula_liberiuncontents_help_image',
             i18n_domain='vindula_liberiuncontents',
             ),
-        required=False
+        required=True
     ),
     
     IntegerField(
@@ -42,6 +42,7 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
             i18n_domain='vindula_liberiuncontents',
         ),
         default=32,
+        required=True
     ),
     
     IntegerField(
@@ -55,6 +56,7 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
             i18n_domain='vindula_liberiuncontents',
         ),
         default=32,
+        required=True
     ),
     
     TextField(
@@ -66,7 +68,8 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
                 description_msgid='vindula_liberiuncontents_link',
                 i18n_domain='vindula_liberiuncontents',
             ),
-            default='http://'
+            default='http://',
+            required=True
     ), 
                                                                      
 ))
