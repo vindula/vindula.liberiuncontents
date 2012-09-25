@@ -35,7 +35,7 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
         name='imageWidth',
         widget=IntegerWidget(
             label=_(u"Largura da imagem"),
-            description=_(u"Largura da imagem em pixels, insira apenas números iteiros."),
+            description=_(u"Largura da imagem em pixels, insira apenas números inteiros."),
             
             label_msgid='vindula_liberiuncontents_label_imageWidth',
             description_msgid='vindula_liberiuncontents_help_imageWidth',
@@ -48,8 +48,8 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
     IntegerField(
         name='imageHeight',
         widget=IntegerWidget(
-            label=_(u"Largura da imagem"),
-            description=_(u"Largura da imagem em pixels, insira apenas números iteiros."),
+            label=_(u"Altura da imagem"),
+            description=_(u"Altura da imagem em pixels, insira apenas números inteiros."),
             
             label_msgid='vindula_liberiuncontents_label_imageHeight',
             description_msgid='vindula_liberiuncontents_help_imageHeight',
