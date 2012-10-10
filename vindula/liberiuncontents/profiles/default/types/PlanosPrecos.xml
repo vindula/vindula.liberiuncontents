@@ -6,7 +6,7 @@
   <!-- Basic metadata -->
  <property name="title" i18n:translate="">Planos e Preços</property>
  <property name="i18n_domain">vindula.liberiuncontents</property>
- <property name="description" i18n:translate="">Conteudo para para adicionar um novo plano na pagina de planos.</property>
+ <property name="description" i18n:translate="">Conteúdo para adicionar um novo plano na página.</property>
  <property name="content_icon">++resource++vindula.liberiuncontents/images/icons/planosprecos.png</property>
  <property name="content_meta_type">PlanosPrecos</property>
  <property name="product">vindula.liberiuncontents</property>

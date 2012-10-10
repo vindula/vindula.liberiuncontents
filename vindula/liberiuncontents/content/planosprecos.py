@@ -48,7 +48,7 @@ PlanosPrecos_schema = ATDocumentSchema.copy() + Schema((
         name='featuresPlan',
         widget=InAndOutWidget(
             label=_(u"Funcionalidades do plano."),
-            description=_(u"Selecione as funcionalidades presentes nessa versao."),
+            description=_(u"Selecione as funcionalidades presentes nessa versão."),
         ),
         vocabulary='getFeatures',
         required=True,

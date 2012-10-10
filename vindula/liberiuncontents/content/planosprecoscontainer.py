@@ -31,7 +31,7 @@ PlanosPrecosContainer_schema =  ATFolder.schema.copy() + Schema((
     TextField(
             name='compareTitle',
             widget=StringWidget(
-                label=_(u"Titulo para tabela comparativa."),
+                label=_(u"Título para tabela comparativa."),
                 description=_(u"Insira um título para aparecer sobre a tabela comparativa."),
                 label_msgid='vindula_liberiuncontents_label_compareTitle',
                 description_msgid='vindula_liberiuncontents_compareTitle',
@@ -44,7 +44,7 @@ PlanosPrecosContainer_schema =  ATFolder.schema.copy() + Schema((
     TextField(
             name='compareSubtitle',
             widget=StringWidget(
-                label=_(u"Subtitulo para tabela comparativa."),
+                label=_(u"Subtítulo para tabela comparativa."),
                 description=_(u"Insira um subtítulo para aparecer sobre a tabela comparativa."),
                 label_msgid='vindula_liberiuncontents_label_compareSubtitle',
                 description_msgid='vindula_liberiuncontents_compareSubtitle',
@@ -81,7 +81,7 @@ PlanosPrecosContainer_schema =  ATFolder.schema.copy() + Schema((
             description_msgid='vindula_liberiuncontents_help_versions',
             columns= {
                 "feature" : Column(_(u"Funcionalidade")),
-                "topic" : SelectColumn(_(u"Topico"), vocabulary="getTopics")
+                "topic" : SelectColumn(_(u"Tópico"), vocabulary="getTopics")
             }
         ),
     ),                                                            
@@ -105,7 +105,7 @@ for i in L:
     PlanosPrecosContainer_schema[i].widget.visible = invisivel  
 
 class PlanosPrecosContainer(ATFolder):
-    """ Planos e Precos Container """
+    """ Planos e Preços Container """
     security = ClassSecurityInfo()
     implements(IPlanosPrecosContainer)
     portal_type = 'PlanosPrecosContainer'
