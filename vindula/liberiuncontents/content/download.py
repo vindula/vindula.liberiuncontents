@@ -35,7 +35,7 @@ Download_schema = ATDocumentSchema.copy() + Schema((
     TextField(
             name='url_button',
             widget=StringWidget(
-                label=_(u"URL para a fazer o download do primeiro botao."),
+                label=_(u"URL para a fazer o download do primeiro botão."),
                 description=_(u"Insira uma url para o primeiro botão."),
                 label_msgid='vindula_liberiuncontents_label_url_button',
                 description_msgid='vindula_liberiuncontents_help_url_button',

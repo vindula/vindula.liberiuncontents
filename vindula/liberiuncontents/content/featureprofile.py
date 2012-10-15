@@ -8,6 +8,7 @@ from vindula.liberiuncontents import MessageFactory as _
 from z3c.relationfield.schema import RelationList, RelationChoice
 from Products.CMFCore.utils import getToolByName
 
+
 #Interface
 class IFeatureProfile(form.Schema):
     """ Feature Section """
@@ -20,14 +21,14 @@ class IFeatureProfile(form.Schema):
 
     description_profile = schema.Text(
         title=_(u"Descrição"),
-        description=_(u"Insira uma descrição do perfil, no máximo 280 caracteres."),
+        description=_(u"Insira uma descrição do perfil no máximo de 280 caracteres."),
         required=True,
         max_length=280,
         )
 
     image_profile = RelationChoice(
         title=_(u"Imagem do Perfil"),
-        description=_(u"Selecione a imagem que aparecerá do lado direito do título do perfil, recomendasse uma imagem 79x79."),
+        description=_(u"Selecione a imagem que aparecerá do lado direito do título do perfil, recomendasse uma imagem de 79x79."),
         source=ObjPathSourceBinder( portal_type = 'Image',),
         required=False,
         )

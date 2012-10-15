@@ -6,7 +6,7 @@
   <!-- Basic metadata -->
  <property name="title" i18n:translate="">Download</property>
  <property name="i18n_domain">vindula.themedefault</property>
- <property name="description" i18n:translate="">Conteudo para adicionar um novo download na pagina de downloads.</property>
+ <property name="description" i18n:translate="">Conteúdo para adicionar um novo download na página de downloads.</property>
  <property name="content_icon">++resource++vindula.liberiuncontents/images/icons/download.png</property>
  <property name="content_meta_type">Download</property>
  <property name="product">vindula.liberiuncontents</property>

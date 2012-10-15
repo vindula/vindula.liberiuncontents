@@ -80,7 +80,7 @@ DownloadContainer_schema =  ATFolder.schema.copy() + Schema((
         widget=ReferenceBrowserWidget(
             default_search_index='SearchableText',
             label=_(u"Selecione o primeiro Download"),
-            description=_(u"Selecione um conteúdo Download para apercer na visulização dos downloads."),
+            description=_(u"Selecione um conteúdo Download para aparecer na visualização dos downloads."),
             
             label_msgid='vindula_liberiuncontents_label_primeira_coluna',
             description_msgid='vindula_liberiuncontents_help_primeira_coluna',
@@ -96,7 +96,7 @@ DownloadContainer_schema =  ATFolder.schema.copy() + Schema((
         widget=ReferenceBrowserWidget(
             default_search_index='SearchableText',
             label=_(u"Selecione o segundo Download"),
-            description=_(u"Selecione um conteúdo Download para apercer na visulização dos downloads."),
+            description=_(u"Selecione um conteúdo Download para aparecer na visualização dos downloads."),
             
             label_msgid='vindula_liberiuncontents_label_segunda_coluna',
             description_msgid='vindula_liberiuncontents_help_segunda_coluna',
@@ -112,7 +112,7 @@ DownloadContainer_schema =  ATFolder.schema.copy() + Schema((
         widget=ReferenceBrowserWidget(
             default_search_index='SearchableText',
             label=_(u"Selecione o terceiro Download"),
-            description=_(u"Selecione um conteúdo Download para apercer na visulização dos downloads."),
+            description=_(u"Selecione um conteúdo Download para aparecer na visualização dos downloads."),
             
             label_msgid='vindula_liberiuncontents_label_terceira_coluna',
             description_msgid='vindula_liberiuncontents_help_terceira_coluna',
@@ -124,7 +124,7 @@ DownloadContainer_schema =  ATFolder.schema.copy() + Schema((
     TextField(
             name='title_others',
             widget=StringWidget(
-                label=_(u"Titulo para otros Downloads."),
+                label=_(u"Titulo para outros Downloads."),
                 description=_(u"Insira um título para aparecer na parte de outros Downloads."),
                 label_msgid='vindula_liberiuncontents_label_description_others',
                 description_msgid='vindula_liberiuncontents_description_others',
@@ -149,7 +149,7 @@ DownloadContainer_schema =  ATFolder.schema.copy() + Schema((
     TextField(
             name='versions',
             widget=TextAreaWidget(
-                label=_(u"Versões existes para Download."),
+                label=_(u"Versões existentes para Download."),
                 description=_(u"Cadastre as versões disponiveis para download. Uma versão por linha."),
                 
                 label_msgid='vindula_liberiuncontents_label_versions',

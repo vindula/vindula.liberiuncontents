@@ -8,6 +8,7 @@ from vindula.liberiuncontents import MessageFactory as _
 from z3c.relationfield.schema import RelationList, RelationChoice
 from Products.CMFCore.utils import getToolByName
 
+
 #Interface
 class IFeatureTopic(form.Schema):
     """ Feature Section """
