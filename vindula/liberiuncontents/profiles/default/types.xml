@@ -9,8 +9,6 @@
 <object name="portal_types" meta_type="Plone Types Tool">
   <!-- -*- extra stuff goes here -*- -->
   
-  <object name="vindula.liberiuncontents.content.pricing" meta_type="Dexterity FTI"/>
-  
   <object name="vindula.liberiuncontents.content.features" meta_type="Dexterity FTI"/>
   <object name="vindula.liberiuncontents.content.featuretopic" meta_type="Dexterity FTI"/>
   <object name="vindula.liberiuncontents.content.featuresection" meta_type="Dexterity FTI"/>

@@ -28,21 +28,32 @@ PlanosPrecos_schema = ATDocumentSchema.copy() + Schema((
                 i18n_domain='vindula_liberiuncontents',
             ),
         required=True,
+    ),
+    
+    TextField(
+        name='textButton',
+        widget=StringWidget(
+            label=_(u"Texto do botão"),
+            description=_(u"Insira o texto que aparecerá no botão."),
+            label_msgid='vindula_liberiuncontents_label_textButton',
+            description_msgid='vindula_liberiuncontents_help_textButton',
+            i18n_domain='vindula_liberiuncontents',
+        ),
+        required=True,
+        default='Inscrever-se'
     ),        
     
-    
-    IntegerField(
+    TextField(
         name='preco',
-        widget=IntegerWidget(
+        widget=StringWidget(
             label=_(u"Valor do plano"),
             description=_(u"Valor do plano."),
-            
             label_msgid='vindula_liberiuncontents_label_preco',
             description_msgid='vindula_liberiuncontents_help_preco',
             i18n_domain='vindula_liberiuncontents',
         ),
         required=True,
-    ),                        
+    ),
     
     LinesField(
         name='featuresPlan',
