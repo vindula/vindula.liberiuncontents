@@ -43,17 +43,29 @@ PlanosPrecos_schema = ATDocumentSchema.copy() + Schema((
         default='Inscrever-se'
     ),        
     
-    TextField(
+    IntegerField(
         name='preco',
-        widget=StringWidget(
+        widget=IntegerWidget(
             label=_(u"Valor do plano"),
             description=_(u"Valor do plano."),
             label_msgid='vindula_liberiuncontents_label_preco',
             description_msgid='vindula_liberiuncontents_help_preco',
             i18n_domain='vindula_liberiuncontents',
         ),
-        required=True,
+        required=False,
     ),
+    
+    TextField(
+        name='textValor',
+        widget=StringWidget(
+            label=_(u"Texto destaque"),
+            description=_(u"Texto que aparecerá acima do botão."),
+            label_msgid='vindula_liberiuncontents_textValor',
+            description_msgid='vindula_liberiuncontents_help_textValor',
+            i18n_domain='vindula_liberiuncontents',
+        ),
+        required=False,
+    ),   
     
     LinesField(
         name='featuresPlan',

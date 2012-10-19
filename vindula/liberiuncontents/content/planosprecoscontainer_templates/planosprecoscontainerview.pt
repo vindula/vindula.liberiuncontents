@@ -31,7 +31,7 @@
 							<p class="descriptionPlan fontDiscreet marginTp10" tal:content="plano/Description">Description</p>
 							
 							<div class="alignCenter">							
-								<p class="precoPlano" tal:content="plano/getPreco|nothing">Valor</p>
+								<p class="precoPlano" tal:content="plano/getTextValor|nothing">Valor</p>
 								<a class="button" tal:content="plano/getTextButton|nothing" tal:define="url plano/getURLButton" tal:attributes="href python: url[:4] != 'http' and 'http://'+url or url">Inscrever-se</a>
 							</div>
 						</div>			
