@@ -42,19 +42,7 @@ PlanosPrecos_schema = ATDocumentSchema.copy() + Schema((
         required=True,
         default='Inscrever-se'
     ),        
-    
-    IntegerField(
-        name='preco',
-        widget=IntegerWidget(
-            label=_(u"Valor do plano"),
-            description=_(u"Valor do plano."),
-            label_msgid='vindula_liberiuncontents_label_preco',
-            description_msgid='vindula_liberiuncontents_help_preco',
-            i18n_domain='vindula_liberiuncontents',
-        ),
-        required=False,
-    ),
-    
+
     TextField(
         name='textValor',
         widget=StringWidget(
