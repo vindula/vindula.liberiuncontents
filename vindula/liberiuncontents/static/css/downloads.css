@@ -73,8 +73,8 @@
 .button-download span {
 	color: #FFFFFF;
     font-size: 12px;
-    left: 7.5em;
+    left: 3.8em;
     position: relative;
-    top: 50%;
-	text-decoration:none;
+    text-decoration: none;
+    top: 20%;
 }
