@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from five import grok
 
-from vindula.content import MessageFactory as _
+from vindula.liberiuncontents import MessageFactory as _
 from AccessControl import ClassSecurityInfo
 from Products.CMFCore.utils import getToolByName
 
