@@ -20,7 +20,7 @@
             <div id="vindula-features">
 				<div class="overflowHidden" id="boxes_funcionalidade" tal:define="profiles view/getProfiles | nothing" tal:condition="profiles">
             		<h2 tal:content="context/description">Conheça as funcionalidades do Vindula, temos ferramentas para todos os perfis.</h2>
-        			<div class="coluna_boxes width_20" tal:repeat="profile profiles">			
+        			<!--div class="coluna_boxes width_20" tal:repeat="profile profiles">			
 						<tal:cond condition="profile/contents">
 							<div class="sombra_box" tal:repeat="content profile/contents">
 								<div class="box_secundario bk_box">
@@ -29,7 +29,7 @@
 								</div>
 							</div>
 						</tal:cond>
-					</div>
+					</div-->
             	</div>	
 				<div class="VisualClear"></div>
 				<div class="bk_sombra" tal:define="contents view/getContent | nothing" tal:condition="contents" tal:repeat="content contents" tal:attributes="id content/id | nothing">

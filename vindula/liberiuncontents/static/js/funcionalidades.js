@@ -36,9 +36,9 @@ $j(document).ready(function(){
 			}
 			
 			
-			ul.find('div.accordionContent').slideUp('normal');
+			ul.find('div.accordionContent').hide();
 			//$j('ul span.accordionContent').slideUp('normal');
-			item_atual.next().slideDown('normal');
+			item_atual.next().show();
 		}
 	});
 	

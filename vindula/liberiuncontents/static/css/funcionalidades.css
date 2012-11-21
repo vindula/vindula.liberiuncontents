@@ -64,13 +64,11 @@
 }
 
 .bk_sombra{
+/*
     background:url("/++resource++vindula.liberiuncontents/imagens/bk_funcionalidades.png") no-repeat scroll center top transparent;
     margin: 3em 0 0;
     padding: 5em 1.5em 0;
-}
-
-.funcionalidade{
-    margin: 0 4.8em;
+*/
 }
 
 .imagem_topo{
@@ -126,7 +124,6 @@
     float: left;
     font-size: 110%;
     padding: 1.5em 0 0;
-	width: 395px;
 }
 
 #content .accordion ul {
@@ -164,6 +161,7 @@
 
 #content img.imagemAccordionOn {
     display: block;
+	margin: 0 auto;
 }
 
 h3.accordionButton {
@@ -190,7 +188,6 @@ h3.accordionButton {
 .img_funcionalidade{
     float: right;
     height: 410px;
-    width: 395px;
 }
 
 #content .link_on span p{
