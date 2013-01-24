@@ -14,6 +14,7 @@ from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
 from Products.ATContentTypes.content.schemata import finalizeATCTSchema
 from vindula.liberiuncontents.config import *
 
+import json
 
 DownloadContainer_schema =  ATFolder.schema.copy() + Schema((
                                                             
@@ -239,7 +240,7 @@ class DownloadContainerView(grok.View):
         query = '/'.join(self.context.getPhysicalPath())
         results = pc( path={'query': query},
                      portal_type='Download',
-                     review_state='published',
+                     review_state=['published','external'],
                      sort_on= 'getObjPositionInParent', )
         L=[]
         if results:
@@ -271,21 +272,22 @@ class DownloadContainerView(grok.View):
         return None
             
             
-            
-            
+#View Dados
+class DownloadDadosEmailView(grok.View):
+    grok.context(IDownloadContainer)
+    grok.require('zope2.View')
+    grok.name('view_dados_mail')
+                
+    def render(self):
+        D = {}
+        D['downloads'] = self.downloads
+        D['other'] = self.other
+        
+        self.request.response.setHeader("Content-type","application/json")
+        return json.dumps(D)
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    def update(self):
+        downloads = DownloadContainerView(self.context, self.request)
+        self.downloads = downloads.getSelectedDownloads() 
+        self.other = downloads.getOtherVersions()
     
