@@ -242,7 +242,7 @@ class DownloadContainerView(grok.View):
                      portal_type='Download',
                      review_state=['published','external'],
                      sort_on= 'getObjPositionInParent', )
-        L=[]
+        L=[] 
         if results:
             for item in results:
                 obj = item.getObject()
@@ -284,7 +284,8 @@ class DownloadDadosEmailView(grok.View):
         D['other'] = self.other
         
         self.request.response.setHeader("Content-type","application/json")
-        return json.dumps(D)
+        self.request.response.setHeader("charset", "UTF-8")
+        return json.dumps(D,ensure_ascii=False)
     
     def update(self):
         downloads = DownloadContainerView(self.context, self.request)
