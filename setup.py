@@ -28,6 +28,7 @@ setup(name='vindula.liberiuncontents',
           'setuptools',
           'plone.app.dexterity',
           'plone.namedfile [blobs]',
+          'Products.DataGridField'
           # -*- Extra requirements: -*-
       ],
       entry_points="""

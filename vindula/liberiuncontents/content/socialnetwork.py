@@ -10,7 +10,8 @@ from AccessControl import ClassSecurityInfo
 from vindula.liberiuncontents.config import *
 from vindula.liberiuncontents import MessageFactory as _
 from vindula.liberiuncontents.content.interfaces import ISocialNetwork
-from vindula.controlpanel.browser.at.widget import VindulaReferenceSelectionWidget
+# from vindula.controlpanel.browser.at.widget import VindulaReferenceSelectionWidget
+from archetypes.referencebrowserwidget.widget import ReferenceBrowserWidget
 
 # Interface and schema
 SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
@@ -19,7 +20,7 @@ SocialNetwork_schema = schemata.ATContentTypeSchema.copy() + Schema((
         multiValued=0,
         allowed_types=('Image',),
         relationship='image_banner',
-        widget=VindulaReferenceSelectionWidget(
+        widget=ReferenceBrowserWidget(
             default_search_index='SearchableText',
             label=_(u"Imagem"),
             description=_(u"Insira uma imagem, ícone ou logo que faça referência à rede social."),
