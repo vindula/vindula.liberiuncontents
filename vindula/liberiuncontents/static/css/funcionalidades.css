@@ -160,7 +160,10 @@
 
 #content img.imagemAccordionOn {
     display: block;
-	margin: 0 auto;
+    margin: 40px auto;
+     -webkit-box-shadow: 0 0 8px 2px #C9C9C9;
+     box-shadow: 0 0 8px 2px #C9C9C9;
+
 }
 
 h3.accordionButton {
