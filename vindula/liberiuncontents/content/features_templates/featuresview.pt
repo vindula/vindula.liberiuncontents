@@ -34,25 +34,25 @@
 				<div class="VisualClear"></div>
 				<div class="bk_sombra" tal:define="contents view/getContent | nothing" tal:condition="contents" tal:repeat="content contents" tal:attributes="id content/id | nothing">
 					<div class="funcionalidade">
-						<div class="topo_funcionalidade">
-							<div class="imagem_topo">
+						<div class="topo_funcionalidade row">
+							<div class="imagem_topo columns large-2 small-2">
 								<img tal:condition="content/image" tal:attributes="src string: ${content/image}/image_thumb" alt="" src="/++resource++vindula.liberiuncontents/imagens/img_funcionalidade01.png"/>
 							</div>
-							<div class="overflowHidden">
-								<div class="titulos">
+							<div class="overflowHidden columns large-10 small-10">
+								<div class="titulos columns large-12 small-12">
 									<div class="titulo_funcionalidade">
 										<h1 tal:condition="content/title" tal:content="content/title">title</h1>
 									</div>
 									<div class="titulo_descricao">
-										<h1 tal:condition="content/subtitle" tal:content="content/subtitle">subtitle</h1>
+										<h3 tal:condition="content/subtitle" tal:content="content/subtitle">subtitle</h3>
 									</div>
 								</div>
 								<div class="link_topo">
-									<a href="#vindula-features" title="Topo">Topo</a>
+									<a href="##vindula-features" title="Topo">Topo</a>
 								</div>
-							</div>
-							<div class="descricao_funcionalidade">
-								<h2 tal:condition="content/description" tal:content="content/description">description</h2>
+							    <div class="descricao_funcionalidade">
+									<h3 tal:condition="content/description" tal:content="content/description">description</h3>
+								</div>
 							</div>
 						</div>
 						<div class="overflowHidden conteudo_funcionalidade" tal:define="topics content/topics | nothing" tal:condition="topics">
