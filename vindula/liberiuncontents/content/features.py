@@ -19,21 +19,27 @@ class FeaturesView(grok.View):
     grok.name('view')
     
     def getProfiles(self):
-        results = self.context.values()
+        pc = getToolByName(self.context, 'portal_catalog')
+        query = '/'.join(self.context.getPhysicalPath())
+        results = pc( path={'query': query},
+                     portal_type='vindula.liberiuncontents.content.featureprofile',
+                     review_state='published',
+                     sort_on= 'getObjPositionInParent',)
         L = []
         if results:
             for result in results:
+                obj = result.getObject()
                 if result.portal_type == 'vindula.liberiuncontents.content.featureprofile':
                     D = {}
-                    D['title'] = result.Title()
-                    D['description'] = result.description_profile
+                    D['title'] = obj.Title()
+                    D['description'] = obj.description_profile
                     D['image'] = '/++resource++vindula.liberiuncontents/imagens/img_box_destaque.jpg'
-                    if result.image_profile:
-                        if result.image_profile.to_object:
-                            D['image'] = '%s/image_thumb' % result.image_profile.to_object.absolute_url()
+                    if obj.image_profile:
+                        if obj.image_profile.to_object:
+                            D['image'] = '%s/image_thumb' % obj.image_profile.to_object.absolute_url()
                     D['contents'] = []
-                    if result.values():
-                        contents = result.values()
+                    if obj.values():
+                        contents = obj.values()
                         for content in contents:
                             if content.portal_type == 'vindula.liberiuncontents.content.featuresection':
                                 DC = {}
@@ -93,18 +99,3 @@ class FeaturesView(grok.View):
                 L.append(D)
                 
         return L
-        
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
